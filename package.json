@@ -1,0 +1,12 @@
+{
+  "name": "algorithm-chronicle",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "算竞纪事：平台列传、赛事年表与公共议题",
+  "scripts": {
+    "build": "python3 scripts/build.py",
+    "dev": "python3 scripts/build.py && python3 scripts/serve.py",
+    "test": "python3 -m unittest discover -s tests -v"
+  }
+}
