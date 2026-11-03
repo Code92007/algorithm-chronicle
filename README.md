@@ -2,6 +2,8 @@
 
 一份以史书形式编排、以简短现代汉语书写的算法竞赛记录。纯静态网页，无前端框架、无运行时外部依赖，可直接部署到 GitHub Pages 的个人站点或项目子路径。
 
+站点：[code92007.github.io/algorithm-chronicle](https://code92007.github.io/algorithm-chronicle/) · 仓库：[Code92007/algorithm-chronicle](https://github.com/Code92007/algorithm-chronicle)
+
 ## 本地运行
 
 需要 Python 3.10 或更新版本，无需安装第三方包。
@@ -44,11 +46,11 @@ python3 -m unittest discover -s tests -v
 
 数据重建测试覆盖正式组排除、罚时、重复提交、平分、未判定状态和未指定奖项配置；档案检查覆盖届次与日期分离及官方 WF 奖项。
 
-## 后续发布到 GitHub Pages
+## GitHub Pages 部署
 
-项目准备了 `.github/workflows/pages.yml`，尚未关联远端或发布。后续创建仓库后，在 Settings → Pages 选择 GitHub Actions，推送 `main` 即可构建并发布。
+仓库已启用 GitHub Actions 作为 Pages 发布来源。推送 `main` 会运行数据检查、构建静态文件并自动发布；也可以在 Actions 中手动运行 `.github/workflows/pages.yml`。
 
-资源全部使用相对路径，页面导航使用 hash；同时兼容 `username.github.io/` 和 `username.github.io/algorithm-chronicle/`。现有个人主页可继续保留，项目部署位置在推送前决定。
+资源全部使用相对路径，页面导航使用 hash；同时兼容 `username.github.io/` 和 `username.github.io/algorithm-chronicle/`。当前部署在项目子路径 `/algorithm-chronicle/`。
 
 ## 许可
 
